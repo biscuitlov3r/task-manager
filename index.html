@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="jquery-ui-1.13.2/jquery-ui.min.css" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script src="jquery-ui-1.13.2/jquery-ui.min.js"></script>
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <div class="window">
+            <div class="modal">
+                <h1>Create task</h1>
+                <div>
+                    <input
+                        id="title"
+                        type="text"
+                        placeholder="Title"
+                    /><br /><br />
+                    <textarea
+                        placeholder="Description"
+                        name=""
+                        id="desc"
+                        cols="30"
+                        rows="10"
+                    ></textarea
+                    ><br /><br />
+                    <button id="create">Create</button>
+                </div>
+            </div>
+        </div>
+        <header><h1>Taskboard</h1></header>
+        <main>
+            <h1>Current</h1>
+            <div id="current" class="parent">
+                <div id="plus"></div>
+                <!-- <div class="child">
+                    <h3>Task name</h3>
+                    <p>Task description</p>
+                    <button class="delbt">delete</button>
+                </div> -->
+            </div>
+            <h1>Completed</h1>
+            <div id="completed" class="parent"></div>
+        </main>
+    </body>
+</html>
